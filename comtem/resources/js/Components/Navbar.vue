@@ -1,110 +1,99 @@
 <template>
-    <MDBNavbar
-        container
-        expand="lg"
-        bg="light"
-        class="d-flex justify-content-between"
-    >
-        <MDBNavbarBrand>
-            <img src="https://laravel.com/img/logotype.min.svg" alt="" size="2x" />
-        </MDBNavbarBrand>
-
-        <!-- Navbar dropdown -->
-        <MDBDropdown class="nav-item dropdown-responsive" v-model="dropdown1">
-            <MDBDropdownToggle
-                tag="a"
-                class="nav-link"
-                @click="dropdown1 = !dropdown1"
-            >Dropdown</MDBDropdownToggle>
-            <MDBDropdownMenu aria-labelledby="dropdownMenuButton">
-                <MDBDropdownItem href="#">Action</MDBDropdownItem>
-                <MDBDropdownItem href="#">Another Action</MDBDropdownItem>
-                <MDBDropdownItem href="#">Something else here</MDBDropdownItem>
-            </MDBDropdownMenu>
-        </MDBDropdown>
-
+    <MDBNavbar expand="lg" light bg="light" container>
+            <MDBNavbar expand="lg" light bg="light" container>
+                <MDBNavbarNav>
+                    <!-- Badge -->
+                    <MDBNavbarItem href="#">
+                        <span><MDBIcon icon="shopping-cart"></MDBIcon></span>
+                    </MDBNavbarItem>
+                </MDBNavbarNav>
+            </MDBNavbar>
+        <!-- Toggle button -->
         <MDBNavbarToggler
-            target="#navbarColor01"
-            @click="collapse7 = !collapse7"
+            target="#navbarRightAlignExample"
+            @click="collapse5 = !collapse5"
         ></MDBNavbarToggler>
-        <MDBCollapse id="navbarColor01" v-model="collapse7">
-            <MDBNavbarNav class="mb-2 mb-lg-0">
-                <MDBNavbarItem href="#" linkClass="link-secondary">Dashboard</MDBNavbarItem>
-                <MDBNavbarItem href="#" linkClass="link-secondary">Team</MDBNavbarItem>
-                <MDBNavbarItem href="#" linkClass="link-secondary">Projects</MDBNavbarItem>
+        <!-- Collapsible wrapper -->
+        <MDBCollapse v-model="collapse5" id="navbarRightAlignExample">
+            <MDBNavbarNav right class="mb-2 mb-lg-0">
+                <!-- Right links -->
+                <MDBNavbarItem to="#" active>
+                    Home
+                </MDBNavbarItem>
+                <MDBNavbarItem href="#" active>
+                    Link
+                </MDBNavbarItem>
+                <MDBNavbarItem href="#" active>
+                    Link
+                </MDBNavbarItem>
+                <MDBNavbarItem href="#" active>
+                    Link
+                </MDBNavbarItem>
+                <MDBNavbarItem href="#" active>
+                    Link
+                </MDBNavbarItem>
+                <!-- Navbar dropdown -->
+                <MDBDropdown class="nav-item" v-model="dropdown8">
+                    <MDBDropdownToggle
+                        tag="a"
+                        class="nav-link"
+                        @click="dropdown8 = !dropdown8"
+                    >Dropdown</MDBDropdownToggle
+                    >
+                    <MDBDropdownMenu>
+                        <MDBDropdownItem href="#">Action</MDBDropdownItem>
+                        <MDBDropdownItem href="#">Another Action</MDBDropdownItem>
+                        <MDBDropdownItem href="#"
+                        >Something else here</MDBDropdownItem
+                        >
+                    </MDBDropdownMenu>
+                </MDBDropdown>
+                <!-- Right links -->
             </MDBNavbarNav>
         </MDBCollapse>
-
-        <MDBNavbarNav class="mb-2 mb-lg-0 d-flex flex-row">
-            <MDBNavbarItem to="#" class="me-3 me-lg-0" linkClass="link-secondary">
-                <MDBIcon icon="shopping-cart"></MDBIcon>
-            </MDBNavbarItem>
-            <MDBNavbarItem to="#" class="me-3 me-lg-0" linkClass="link-secondary">
-                <MDBIcon icon="bell" />
-                <MDBBadge notification color="danger" pill>1</MDBBadge>
-            </MDBNavbarItem>
-            <MDBNavbarItem href="#" class="me-3 me-lg-0">
-                <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img (31).jpg"
-                    class="rounded-circle"
-                    height="30"
-                    width="25"
-                    alt=""
-                    loading="lazy"
-                />
-            </MDBNavbarItem>
-        </MDBNavbarNav>
+        <!-- Collapsible wrapper -->
     </MDBNavbar>
 </template>
+
 
 <script>
 import {
     MDBNavbar,
-    MDBNavbarItem,
+    MDBNavbarToggler,
     MDBNavbarBrand,
     MDBNavbarNav,
-    MDBNavbarToggler,
-    MDBBadge,
-    MDBIcon,
+    MDBNavbarItem,
     MDBCollapse,
     MDBDropdown,
     MDBDropdownToggle,
     MDBDropdownMenu,
-    MDBDropdownItem
+    MDBDropdownItem,
+    MDBIcon
 } from 'mdb-vue-ui-kit';
-import { ref } from "vue";
+import { ref } from 'vue';
 
 export default {
     components: {
         MDBNavbar,
-        MDBNavbarItem,
+        MDBNavbarToggler,
         MDBNavbarBrand,
         MDBNavbarNav,
-        MDBNavbarToggler,
-        MDBBadge,
-        MDBIcon,
+        MDBNavbarItem,
         MDBCollapse,
         MDBDropdown,
         MDBDropdownToggle,
         MDBDropdownMenu,
-        MDBDropdownItem
+        MDBDropdownItem,
+        MDBIcon
     },
     setup() {
-        const collapse7 = ref(false);
-        const dropdown1 = ref(false);
+        const collapse5 = ref(false);
+        const dropdown8 = ref(false);
+
         return {
-            collapse7,
-            dropdown1
+            collapse5,
+            dropdown8
         }
     }
 };
 </script>
-
-<style scoped>
-/* Hide dropdown on screens smaller than 700px */
-@media (max-width: 1000px) {
-    .dropdown-responsive {
-        display: none;
-    }
-}
-</style>

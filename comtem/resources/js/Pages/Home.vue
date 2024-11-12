@@ -4,46 +4,37 @@
     <div class="main-container">
         <Slider />
 
-<!--        Cards-->
+        <!-- Cards -->
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <Card />
+                    <Card :image="'https://mdbootstrap.com/img/new/standard/nature/184.webp'" :link="'#link1'" />
                 </div>
                 <div class="col-md-3">
-                    <Card />
+                    <Card :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'" :link="'#link2'" />
                 </div>
                 <div class="col-md-3">
-                    <Card />
+                    <Card :image="'https://mdbootstrap.com/img/new/standard/nature/186.webp'" :link="'#link3'" />
                 </div>
                 <div class="col-md-3">
-                    <Card />
+                    <Card :image="'https://mdbootstrap.com/img/new/standard/nature/187.webp'" :link="'#link4'" />
                 </div>
             </div>
         </div>
 
 <!--        Shipping-->
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-3">
                     <Shipping />
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <Shipping />
                 </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <Shipping />
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <Shipping />
-                </div>
-                <div class="col-md-4">
-                    <Shipping />
-                </div>
-                <div class="col-md-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <Shipping />
                 </div>
             </div>
@@ -86,7 +77,7 @@ export default {
 .main-container {
     display: flex;
     flex-direction: column;
-    gap: 70px; /* Adjust as needed */
+    gap: 90px; /* Adjust as needed */
 }
 
 .col-md-3 {
