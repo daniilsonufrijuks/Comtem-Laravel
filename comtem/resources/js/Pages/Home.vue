@@ -41,6 +41,8 @@
         </div>
 <!--Shipping-->
 
+        <ProductIntro />
+
         <Testimonial />
         <Contact />
         <Footer />
@@ -56,6 +58,7 @@ import Testimonial from '../Components/Testimonial.vue';
 import Contact from '../Components/Contact.vue';
 import Shipping from "../Components/Shipping.vue";
 import Search from "../Components/Search.vue";
+import ProductIntro from "../Components/ProductIntro.vue";
 
 
 export default {
@@ -69,6 +72,7 @@ export default {
         Contact,
         Shipping,
         Search,
+        ProductIntro,
     },
 }
 </script>
