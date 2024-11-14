@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\PageController;
 
 //Route::get('/', function () {
 //    return Inertia::render('Welcome', [
@@ -18,6 +19,14 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Home');
 });
+
+
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('/about', [PageController::class, 'about'])->name('about');
+Route::get('/contacts', [PageController::class, 'contacts'])->name('contacts');
+Route::get('/discounts', [PageController::class, 'discounts'])->name('discounts');
+Route::get('/market', [PageController::class, 'market'])->name('market');
+
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

@@ -1,5 +1,5 @@
 <template>
-    <Navbar />
+<!--    <Navbar :routes="routes" />-->
     <Search class="search" />
     <div class="main-container">
         <Slider />
@@ -26,16 +26,16 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-3">
-                    <Shipping />
+                    <Shipping :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'"/>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <Shipping />
+                    <Shipping :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'"/>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <Shipping />
+                    <Shipping :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'"/>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <Shipping />
+                    <Shipping :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'"/>
                 </div>
             </div>
         </div>
@@ -45,7 +45,7 @@
 
         <Testimonial />
         <Contact />
-        <Footer />
+<!--        <Footer />-->
     </div>
 </template>
 
@@ -74,6 +74,9 @@ export default {
         Search,
         ProductIntro,
     },
+    props: {
+        routes: Object
+    }
 }
 </script>
 

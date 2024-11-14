@@ -1,7 +1,7 @@
 <template>
     <MDBCard class="hover-card">
         <MDBCardImg
-            src="https://mdbootstrap.com/img/new/standard/nature/184.webp"
+            :src="image"
             top
             alt="..."
         />
@@ -18,6 +18,12 @@
 <script>
 import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImg, MDBBtn } from "mdb-vue-ui-kit";
 export default {
+    props: {
+        image: {
+            type: String,
+            required: true,
+        }
+    },
     components: {
         MDBCard,
         MDBCardBody,

@@ -17,20 +17,20 @@
         <MDBCollapse v-model="collapse5" id="navbarRightAlignExample">
             <MDBNavbarNav right class="mb-2 mb-lg-0">
                 <!-- Right links -->
-                <MDBNavbarItem to="#" active>
+                <MDBNavbarItem :href="routes.home" active>
                     Home
                 </MDBNavbarItem>
-                <MDBNavbarItem href="#" active>
-                    Link
+                <MDBNavbarItem :href="routes.about" active>
+                    About
                 </MDBNavbarItem>
-                <MDBNavbarItem href="#" active>
-                    Link
+                <MDBNavbarItem :href="routes.contacts" active>
+                    Contacts
                 </MDBNavbarItem>
-                <MDBNavbarItem href="#" active>
-                    Link
+                <MDBNavbarItem :href="routes.discounts" active>
+                    Discounts
                 </MDBNavbarItem>
-                <MDBNavbarItem href="#" active>
-                    Link
+                <MDBNavbarItem :href="routes.market" active>
+                    Market
                 </MDBNavbarItem>
                 <!-- Navbar dropdown -->
                 <MDBDropdown class="nav-item" v-model="dropdown8">
@@ -85,6 +85,12 @@ export default {
         MDBDropdownMenu,
         MDBDropdownItem,
         MDBIcon
+    },
+    props: {
+        routes: {
+            type: Object,
+            required: true
+        }
     },
     setup() {
         const collapse5 = ref(false);

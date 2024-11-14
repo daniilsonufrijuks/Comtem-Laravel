@@ -1,13 +1,14 @@
 <template>
     <MDBCard>
         <MDBCardBody>
-            <MDBCardTitle>Card title</MDBCardTitle>
             <MDBCardText>
-                Some quick example text to build on the card title and make up the bulk of the
-                card's content. Some quick example text to build on the card title and make up the bulk of the
-                card's content. Some quick example text to build on the card title and make up the bulk of the
-                card's content. Some quick example text to build on the card title and make up the bulk of the
-                card's content.
+                <blockquote class="responsive-quote">
+                    <p>Dear Valued Customer,
+                        We are excited to introduce COMTEM, where cutting-edge
+                        technology meets unbeatable service! Whether you're a tech enthusiast,
+                        a professional looking for the latest gadgets, or someone seeking reliable tech support,
+                        we've got everything you need.</p> <cite> COMTEM DEV GROUP</cite>
+                </blockquote>
             </MDBCardText>
         </MDBCardBody>
     </MDBCard>

@@ -89,8 +89,8 @@ export default {
         const checkForm = e => {
             e.target.classList.add("was-validated");
         };
-        const input1 = ref("Mark");
-        const input2 = ref("Otto");
+        const input1 = ref("");
+        const input2 = ref("");
         const input3 = ref("");
         const input4 = ref("");
         const input5 = ref("");
