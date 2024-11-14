@@ -41,11 +41,10 @@
                     >Dropdown</MDBDropdownToggle
                     >
                     <MDBDropdownMenu>
-                        <MDBDropdownItem href="#">Action</MDBDropdownItem>
-                        <MDBDropdownItem href="#">Another Action</MDBDropdownItem>
-                        <MDBDropdownItem href="#"
-                        >Something else here</MDBDropdownItem
-                        >
+                        <MDBDropdownItem href="#">Laptops</MDBDropdownItem>
+                        <MDBDropdownItem href="#">Auction</MDBDropdownItem>
+                        <MDBDropdownItem href="#">Components</MDBDropdownItem>
+                        <MDBDropdownItem href="#">PC</MDBDropdownItem>
                     </MDBDropdownMenu>
                 </MDBDropdown>
                 <!-- Right links -->
