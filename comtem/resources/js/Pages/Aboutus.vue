@@ -1,5 +1,5 @@
 <template>
-    <Navbar :routes="routes" />
+    <!--    <Navbar :routes="routes" />-->
     <Search class="search" />
     <div class="main-container">
         <Slider />
@@ -45,7 +45,7 @@
 
         <Testimonial />
         <Contact />
-        <Footer />
+        <!--        <Footer />-->
     </div>
 </template>
 
