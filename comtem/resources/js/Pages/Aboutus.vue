@@ -41,9 +41,9 @@
         </div>
         <!--Shipping-->
 
-        <ProductIntro />
-
-        <Testimonial />
+<!--        <ProductIntro />-->
+        <Aboutustext />
+<!--        <Testimonial />-->
         <Contact />
         <!--        <Footer />-->
     </div>
@@ -59,11 +59,13 @@ import Contact from '../Components/Contact.vue';
 import Shipping from "../Components/Shipping.vue";
 import Search from "../Components/Search.vue";
 import ProductIntro from "../Components/ProductIntro.vue";
+import Aboutustext from "@/Components/Aboutustext.vue";
 
 
 export default {
     name: 'Home',
     components: {
+        Aboutustext,
         Navbar,
         Slider,
         Footer,

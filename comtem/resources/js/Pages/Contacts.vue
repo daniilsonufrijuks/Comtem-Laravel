@@ -41,7 +41,7 @@
         </div>
         <!--Shipping-->
 
-        <ProductIntro />
+<!--        <ProductIntro />-->
 
         <Testimonial />
         <Contact />
