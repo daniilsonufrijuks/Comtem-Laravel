@@ -42,7 +42,27 @@
         <!--Shipping-->
 
 <!--        <ProductIntro />-->
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- First row: two cards -->
+                <div class="col-6 col-md- g-2">
+                    <ContactsCards />
+                </div>
+                <div class="col-6 col-md-3 g-2">
+                    <ContactsCards />
+                </div>
+            </div>
 
+            <div class="row justify-content-center">
+                <!-- Second row: two cards -->
+                <div class="col-6 col-md- g-2">
+                    <ContactsCards />
+                </div>
+                <div class="col-6 col-md-3 g-2">
+                    <ContactsCards />
+                </div>
+            </div>
+        </div>
         <Testimonial />
         <Contact />
         <!--        <Footer />-->
@@ -59,6 +79,7 @@ import Contact from '../Components/Contact.vue';
 import Shipping from "../Components/Shipping.vue";
 import Search from "../Components/Search.vue";
 import ProductIntro from "../Components/ProductIntro.vue";
+import ContactsCards from "../Components/ContactsCards.vue";
 
 
 export default {
@@ -73,6 +94,7 @@ export default {
         Shipping,
         Search,
         ProductIntro,
+        ContactsCards
     },
     props: {
         routes: Object
