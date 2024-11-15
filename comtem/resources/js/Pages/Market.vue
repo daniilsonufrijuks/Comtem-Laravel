@@ -8,16 +8,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <Card :image="'https://mdbootstrap.com/img/new/standard/nature/184.webp'" :link="'#link1'" />
+                    <Card :image="'../../images/front/prod1.png'" :link="'#link1'" />
                 </div>
                 <div class="col-md-3">
-                    <Card :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'" :link="'#link2'" />
+                    <Card :image="'../../images/front/prod2.png'" :link="'#link2'" />
                 </div>
                 <div class="col-md-3">
-                    <Card :image="'https://mdbootstrap.com/img/new/standard/nature/186.webp'" :link="'#link3'" />
+                    <Card :image="'../../images/front/prod3.png'" :link="'#link3'" />
                 </div>
                 <div class="col-md-3">
-                    <Card :image="'https://mdbootstrap.com/img/new/standard/nature/187.webp'" :link="'#link4'" />
+                    <Card :image="'../../images/front/prod4.png'" :link="'#link4'" />
                 </div>
             </div>
         </div>
