@@ -37,3 +37,14 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+</style>

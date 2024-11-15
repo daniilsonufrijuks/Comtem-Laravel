@@ -26,43 +26,39 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6 col-lg-3">
-                    <Shipping :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'"/>
+                    <Shipping
+                        image="https://mdbootstrap.com/img/new/standard/nature/184.webp"
+                        title="14 Days Return"
+                        text=""
+                    />
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <Shipping :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'"/>
+                    <Shipping
+                        image="https://mdbootstrap.com/img/new/standard/nature/184.webp"
+                        title="Product Check in Store"
+                        text=""
+                    />
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <Shipping :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'"/>
+                    <Shipping
+                        image="https://mdbootstrap.com/img/new/standard/nature/184.webp"
+                        title="Electronics Store N°1 IN LATVIJA"
+                        text=""
+                    />
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <Shipping :image="'https://mdbootstrap.com/img/new/standard/nature/185.webp'"/>
+                    <Shipping
+                        image="https://mdbootstrap.com/img/new/standard/nature/184.webp"
+                        title="Free Delivery"
+                        text=""
+                    />
                 </div>
             </div>
         </div>
         <!--Shipping-->
 
 <!--        <ProductIntro />-->
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- First row: two cards -->
-                <div class="col-6 col-md- g-2">
-                    <ContactsCards />
-                </div>
-                <div class="col-6 col-md-3 g-2">
-                    <ContactsCards />
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <!-- Second row: two cards -->
-                <div class="col-6 col-md- g-2">
-                    <ContactsCards />
-                </div>
-                <div class="col-6 col-md-3 g-2">
-                    <ContactsCards />
-                </div>
-            </div>
-        </div>
+        <ContactsCards />
         <Testimonial />
         <Contact />
         <!--        <Footer />-->
