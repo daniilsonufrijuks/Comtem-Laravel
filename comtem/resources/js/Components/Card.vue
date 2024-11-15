@@ -1,5 +1,5 @@
 <template>
-    <MDBCard class="hover-card">
+    <MDBCard class="hover-card fixed-height">
         <MDBCardImg :src="image" top alt="..." />
         <MDBCardBody>
             <MDBCardTitle style="text-align: center;">Card title</MDBCardTitle>
@@ -46,5 +46,12 @@ export default {
 .hover-card:hover {
     transform: scale(1.05); /* Slightly scale up on hover */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+.fixed-height {
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced properly */
 }
 </style>
